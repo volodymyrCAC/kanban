@@ -3,3 +3,4 @@ next.config.js
 .env
 vendor
 .idea
+.next
