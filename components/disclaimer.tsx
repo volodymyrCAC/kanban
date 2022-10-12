@@ -59,7 +59,7 @@ function Disclaimer(props: DisclaimerProps) {
     };
 
     const handleAcceptClick = () => {
-        localStorage.setItem('omegakanbanaccept', 'true');
+        localStorage.setItem('kanban', 'true');
         props.setIsAcceptDisclaimer(true);
         handleClose();
     };
@@ -77,10 +77,10 @@ function Disclaimer(props: DisclaimerProps) {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-                        <p className={classes.title}>Welcome to Omega Kanban</p>
+                        <p className={classes.title}>Welcome to Kanban</p>
                         <div className={classes.paragraph}>
                             This app is created strictly for demonstration purposes. By
-                            clicking the button below, you accept that Omega Kanban do not
+                            clicking the button below, you accept that Kanban do not
                             guarantee storing your messages.
                         </div>
                         <Button
@@ -99,9 +99,9 @@ function Disclaimer(props: DisclaimerProps) {
                             {'If you have any questions, please email to '}
                             <a
                                 className={classes.email}
-                                href="mailto:omegathrone@omegathrone.com"
+                                href="volodymyr.v@code-care.pro"
                             >
-                                omegathrone@omegathrone.com
+                                volodymyr.v@code-care.pro
                             </a>
                             .
                         </div>

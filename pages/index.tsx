@@ -7,7 +7,7 @@ export default function Main() {
     const [isAcceptDisclaimer, setIsAcceptDisclaimer] = useState(false);
 
     useEffect(() => {
-        if (localStorage.getItem('omegakanbanaccept')) {
+        if (localStorage.getItem('kanban')) {
             setIsAcceptDisclaimer(true);
         }
     });

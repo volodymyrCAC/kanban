@@ -16,7 +16,7 @@ export default function Main(props: iProjectProps) {
     const router = useRouter();
 
     useEffect(() => {
-        if (localStorage.getItem('omegakanbanaccept')) {
+        if (localStorage.getItem('kanban')) {
             setIsAcceptDisclaimer(true);
         }
     });
